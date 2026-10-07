@@ -1,0 +1,121 @@
+/* Try to do CSS reset in here  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the typography and colors */
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #263238;
+  background-color: #f7f7f3;
+}
+
+header, main, footer {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 35px 0 20px;
+  border-bottom: 2px solid #345676;
+}
+
+h1 { font-size: 32px; color: #244766; }
+h2 { font-size: 22px; margin-top: 12px; }
+h3 { font-size: 24px; color: #244766; }
+h4 { font-size: 20px; color: #345676; }
+
+section { margin: 30px 0; }
+p { margin: 12px 0; }
+ul { margin: 12px 0 12px 25px; }
+a { color: #175b91; }
+a:hover { text-decoration: none; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+}
+
+/* 3. Also tried to set the syllabus table in here*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+/* First column of the table, sub areas in philosophy*/
+th:first-child,
+td:first-child {
+  width: 35%;
+}
+
+/* Second column of the table, syllabus links */
+th:nth-child(2),
+td:nth-child(2) {
+  width: 65%;
+}
+
+
+/* Set the newsletter form here*/
+form {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+input, button {
+  font: inherit;
+  max-width: 100%;
+  padding: 8px;
+}
+button {
+  background-color: #244766;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+footer { padding: 20px 0; border-top: 1px solid #c6cdd3; }
+
+/* for the layout for mobile phone in here */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  header { padding-top: 20px; }
+  h1 { font-size: 27px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 21px; }
+  h4 { font-size: 18px; }
+  th, td { padding: 6px; font-size: 13px; }
+  form { flex-direction: column; align-items: stretch; }
+  input, button { width: 100%; }
+}
+
+/* For the style for JavaScript  */
+#toggleButton {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#funFact {
+  margin-top: 10px;
+}
+
+#funFact[hidden] {
+  display: none;
+}
